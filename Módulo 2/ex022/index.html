@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(95, 95, 95);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: auto;
+            margin-right: 30px;
+        }
+
+        nav >a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#"> Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+    </header>
+
+    <main>
+        <section is="assuntos"></section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notiocia do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis necessitatibus ipsam esse magni placeat perspiciatis, sit assumenda omnis veritatis illum eos incidunt praesentium, voluptatibus enim qui ullam. Quam, tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deleniti incidunt sunt distinctio obcaecati fugiat est repellat nesciunt, nostrum inventore earum officia amet reprehenderit, eius tempore blanditiis hic sapiente aut.</p>
+                <aside>
+                    <p>Escrito por José Antônio</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Pedro H. Berardo Monteiro</p>
+    </footer>
+</body>
+</html>
